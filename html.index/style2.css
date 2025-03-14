@@ -1,0 +1,27 @@
+body {
+margin: 0px;
+}
+h1 {
+text-align: center;
+}
+ .nav-bar ul {
+list-style-type: none;
+background-color: lightgray;
+padding: 0px;
+margin: 0;
+overflow: hidden;
+}
+.nav-bar a {
+color: white;
+text-decoration: none;
+padding: 20px; 
+display: block;
+text-align: center;
+}
+.nav-bar a:hover{
+background-color: black;
+}
+.nav-bar li{
+display: inline-block;
+justify-content: space-between;
+}

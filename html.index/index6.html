@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style6.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+    <div class="logo-content">
+    <div class="logo">
+    <i class='bx bxl-c-plus-plus'></i>
+    <div class="logo-name">Garat the codding</div>
+    </div>
+    <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav-list">
+    <li><a href="#">
+   <i class='bx bx-search'></i>
+    <input type="text" placeholder="search...">
+<span class="links-name"></span>
+    </a>
+        <span class="tooltip">search</span>
+    </li>
+     <li><a href="#">
+   <i class='bx bx-grid-alt'></i>
+<span class="links-name">Dashbord</span>
+    </a>
+        <span class="tooltip">dashbord</span>
+    </li>
+     <li><a href="#">
+  
+       <i class='bx bxs-user'></i>
+<span class="links-name">user</span>
+    </a>
+        <span class="tooltip">user</span>
+    </li>
+     <li><a href="#">
+   <i class='bx bx-chat'></i>
+<span class="links-name">chat with us</span>
+    </a>
+        <span class="tooltip">chat</span>
+    </li>
+     <li><a href="#">
+   <i class='bx bxs-pie-chart-alt-2'></i>
+<span class="links-name">analytic</span>
+    </a>
+        <span class="tooltip">analysis</span>
+    </li>
+     <li><a href="#">
+ <i class='bx bxs-folder'></i>
+<span class="links-name">file manager</span>
+    </a>
+        <span class="tooltip">file mananager</span>
+    </li>
+     <li><a href="#">
+ <i class='bx bx-cart'></i>
+<span class="links-name">order</span>
+    </a>
+        <span class="tooltip">order</span>
+    </li>
+     <li><a href="#">
+ <i class='bx bx-heart'></i>
+<span class="links-name">saved</span>
+    </a>
+        <span class="tooltip">saved</span>
+    </li>
+     <li><a href="#">
+<i class='bx bx-cog'></i>
+<span class="links-name">setting</span>
+    </a>
+    <span class="tooltip">setting</span>
+    </li>
+    </ul>
+    <div class="profile-content">
+    <div class="profile">
+    <div class="profile-details">
+   <img src="group.png" alt="my classmates">
+   <div class="name-job">
+
+    <div class="name">Garat codding </div>
+   <div class="job">Web Designer</div>
+    </div>
+    </div>
+    <i class='bx bx-log-out' id="log-out"></i>
+    </div>
+    </div>
+       </div>
+       <div class="home-content">
+       <div class="text">Home content</div>
+       </div>
+    <script>
+    let btn = document.querySelector("#btn");
+let sidebar = document.querySelector(".sidebar");
+let searchBtn = document.querySelector("bx-search");
+
+btn.onclick = function(){
+sidebar.classList.toggle("active");
+}
+searchBtn.onclick = function(){
+sidebar.classList.toggle("active");
+}
+    </script>
+</body>
+</html>

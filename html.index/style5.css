@@ -1,0 +1,99 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            transition: margin-left 0.5s;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 1000;
+        }
+
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 1.1em;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .close-btn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .open-btn {
+            font-size: 30px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            position: fixed;
+            left: 10px;
+            top: 10px;
+            z-index: 1001;
+        }
+
+        #main {
+            transition: margin-left 0.5s;
+            padding: 20px;
+            margin-left: 0;
+        }
+
+        /* Active class for sidebar */
+        .sidebar.active {
+            left: 0;
+        }
+
+        /* When sidebar is active, shift main content */
+        .sidebar.active + #main {
+            margin-left: 250px;
+        }
+
+        /* Mobile first approach */
+        @media screen and (max-height: 450px) {
+            .sidebar {padding-top: 15px;}
+            .sidebar a {font-size: 18px;}
+        }
+
+        @media screen and (min-width: 768px) {
+            #main {
+                margin-left: 250px;
+            }
+
+            .sidebar {
+                left: 0;
+            }
+
+            .open-btn {
+                display: none;
+               
+            }
+            .open-btn h1 {
+            margin-left: 50px;
+            padding: 40px;
+            }
+        }
